@@ -277,10 +277,6 @@ em {
 	color: #5f6166;
 	font-size: 0.75rem;
 }
-.left{
-	display: inline-block;
-	float: left;
-}
 .left img{
 	display: block;
 	width: 1.5rem;
@@ -294,9 +290,16 @@ em {
 	margin-top: 1px;
 	display: block;
 	height:3rem;
-	width: 85%;
+	width: 17.5rem;
 	background-color: #05b4ff;
 	border: 0;
 	color: white;
 	outline: none;
+}
+.left{
+	margin-left: 5%;
+	float: left;
+}
+.right{
+	float: right;
 }
