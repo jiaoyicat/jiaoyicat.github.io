@@ -26,5 +26,5 @@ pay.onmouseover = function() {
 };
 pay.onmouseout= function() {
 	this.innerText="确认无误并提交";
-};
+};	
 

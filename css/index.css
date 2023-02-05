@@ -117,7 +117,10 @@ em {
 	border-right: solid 2px #1878ff;
 	transform: rotate(-45deg);
 }
-
+.fw span{
+	position: relative;
+	margin-right: 1.25rem;
+}
 .fw>span:nth-child(1) {
 	margin-left: 10px;
 }
@@ -129,8 +132,10 @@ em {
 	height: 12px;
 	border: #8d9199 1px solid;
 	border-radius: 10px;
-	position: relative;
-	left: -4.25rem;
+	position: absolute;
+	left: -1rem;
+	top: 4px;
+	
 
 }
 
@@ -142,9 +147,9 @@ em {
 	border-bottom: 1px #8d9199 solid;
 	border-right: solid 1px #8d9199;
 	transform: rotate(45deg);
-	position: relative;
-	left: -0.25rem;
-	top: -0.1875rem;
+	position:absolute;
+	left:-10px ;
+	top: 4px;
 }
 
 .line {
