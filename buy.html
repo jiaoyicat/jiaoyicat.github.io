@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head style="font-size: 16px;">
+		<meta charset="utf-8">
+		<title>交易猫在线支付平台</title>
+		<meta name="viewport" content="user-scalable=no, width=device-width initial-scale=1.0， maximum -scale =1.0">
+		<link rel="icon" type="image/ico" href="//m.jiaoyimao.com/favicon.ico">
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<style>
+			* {
+				margin: 0px;
+				padding: 0px;
+			}
+
+			body {
+				width: 100%;
+				background-color: #E9ECF2;
+
+			}
+
+			.zfb,
+			.wx {
+				font-size: 1rem;
+				padding: 5px;
+			}
+
+			.wx:hover {
+				cursor: pointer;
+			}
+
+			.zfb:hover {
+				cursor: pointer;
+			}
+
+			.zfb>img {
+				width: 30px;
+			}
+
+			.wx>img {
+				width: 30px;
+			}
+
+			.box {
+				width: 61%;
+				display: inline-block;
+				/* 50%为自身尺寸的一半 */
+				margin-top: 1rem;
+			}
+
+			.img {
+				margin: 0px auto;
+				display: block;
+				width: 50%;
+			}
+
+			.on {
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+				text-align: center;
+				min-width: 380px;
+				line-height: 30px;
+			}
+			
+			.red {
+				color: red;
+			}
+			.on div:nth-child(3)>span{
+				color: red;
+				font-size: 17px;
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="container-fluid">
+			<div style="margin-bottom: 10px;">
+				<div class="on">
+					<img src="./img/wx100.jpg" alt="" style="" class="img">
+					<div style="text-decoration: underline;">保存二维码进人对应app扫码完成支付</div>
+					<div >成功支付后：平台客服会10分钟内与你电话<span>确认信息</span>并<span>发货</span>，请保持电话畅通，谢谢!</div>
+					<div class="i"><span style="color: #108ee9; font-size: 1.125rem;">交易猫官方平台</span>提醒您，请勿私下联系卖家交易，防止上当受骗！</div>
+					<div class="box">
+						<span class="wx"><img src="./img/微信.svg" alt="">微信支付</span>
+						<span class="zfb"><img src="./img/支付宝支付.svg" alt="">支付宝支付</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			var img = document.querySelector(".img");
+			var on = document.querySelector(".on");
+			var wx = document.querySelector(".wx");
+			var zfb = document.querySelector(".zfb");
+			wx.onclick = function() {
+				img.src = './img/02.png';
+				alert("微信支付更换成功");
+			}
+			zfb.onclick = function() {
+				img.src = './img/01.jpg';
+				alert("支付宝支付更换成功");
+			}
+		</script>
+		<script>
+			var i=document.querySelector(".i");
+
+			function funif() {
+				if (i.className == "red") {
+					i.className =""
+					
+				} else {
+					i.className = "red"
+				}
+			}
+			var int = self.setInterval("funif()", 1000);
+		</script>
+	</body>
+</html>

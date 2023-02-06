@@ -1,0 +1,39 @@
+#modaltitle>span>img{
+width: 6.25rem;
+}
+#modaltitle>span>img{
+	display: inline-block;
+}
+.modal-body>form>div span{
+	float: left;
+}
+.modal-body>form>div>input{
+	outline: #1878ff;
+	float: left;
+}
+.inputbox{
+	display: inline-block;
+	width: 60%;
+	padding-left: 0.625rem;
+}
+.inputbox input{
+	display: inline-block;
+	width: 100%;
+	float: right;
+	outline: #1878ff;
+	border:#616366 1px solid ;
+	border-radius: 0.125rem;
+	padding: 0.3125rem;
+	font-size: 0.5rem;
+	font-weight: 400;
+}
+.inputbox>div>span{
+	color: #616366;
+	font-size: 0.875rem;
+	font-weight: 400;
+}
+.paying{
+}
+.paying:hover{
+	background-color: #1878ff;
+}
